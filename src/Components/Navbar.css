@@ -1,0 +1,74 @@
+
+  @media (min-width: 991.98px) {
+    main {
+      padding-left: 240px;
+    }
+  }
+
+  .navbar{
+    background-color: #041a46aa;
+  }
+
+  
+  .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 58px 0 0;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+    width: 230px;
+    background-color: #0b0c0eca;
+    backdrop-filter: blur(5px);
+    z-index: 600;
+  }
+  
+  @media (max-width: 991.98px) {
+    .sidebar {
+      width: 100%;
+    }
+  }
+  .sidebar .active {
+    border-radius: 20px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+  }
+  
+  .sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  }
+
+
+.sidebar .list-group-item {
+  color: #ffffff; /* Set the text color to white */
+  background: transparent;
+  border: none;
+}
+
+.sidebar .list-group-item:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Add a blur effect on hover */
+  border-radius: 10px; /* Apply smooth border radius */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Add transition animation */
+}
+
+.sidebar .list-group-item span {
+  transition: transform 0.3s ease; /* Add popup animation to the text */
+}
+
+.sidebar .list-group-item:hover span {
+  transform: translateY(-2px); /* Move the text up on hover */
+}
+
+/* Additional styles for the main content */
+main.container {
+  margin-top: 70px; /* Increase the margin-top to give space for the fixed navbar */
+}
+
+/* Optional: Change the background color of the main content */
+main.container {
+  background-color: #2fff00;
+}
